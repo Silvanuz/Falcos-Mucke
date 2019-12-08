@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/Enemy_Konfig.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Player_Konfig.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/music.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Road_enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Road.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/music_enemy.tscn" type="PackedScene" id=6]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 496.039, 311.059 )
+current = true
+
+[node name="Texten" type="Node2D" parent="."]
+position = Vector2( 176.86, 99.5446 )
+scale = Vector2( 3, 3 )
+
+[node name="Label" type="Label" parent="Texten"]
+margin_left = -0.409225
+margin_top = -7.36642
+margin_right = 95.5908
+margin_bottom = 28.6336
+text = "Dummer Alex der alles Nachmacht"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Texten"]
+margin_left = 1.637
+margin_top = 84.7139
+margin_right = 233.637
+margin_bottom = 120.714
+text = "Schlauer Gianny der einen Vormacht"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Enemy_Konfig" type="Node2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="Road_enemy" parent="Enemy_Konfig" instance=ExtResource( 4 )]
+position = Vector2( 180.745, 388.97 )
+
+[node name="music_enemy" parent="Enemy_Konfig" instance=ExtResource( 6 )]
+
+[node name="Player_Konfig" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="music" parent="Player_Konfig" instance=ExtResource( 3 )]
+
+[node name="Road" parent="Player_Konfig" instance=ExtResource( 5 )]
+position = Vector2( 169.907, 115.407 )
