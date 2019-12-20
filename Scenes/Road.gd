@@ -52,10 +52,17 @@ func add_bar():
 	curr_bar_index += 1
 
 func get_bar_data():
-	var left_data = tracks_data[0].bars[curr_bar_index]
-	#var center_data = tracks_data[1].bars[curr_bar_index]
-	#var right_data = tracks_data[2].bars[curr_bar_index]
-	return  [left_data]
+	var one_data = tracks_data[0].bars[curr_bar_index]
+	var two_data = tracks_data[1].bars[curr_bar_index]
+	var three_data = tracks_data[2].bars[curr_bar_index]
+	var four_data = tracks_data[3].bars[curr_bar_index]
+	var five_data = tracks_data[4].bars[curr_bar_index]
+	var six_data = tracks_data[5].bars[curr_bar_index]
+	var seven_data = tracks_data[6].bars[curr_bar_index]
+	var eight_data = tracks_data[7].bars[curr_bar_index]
+	var nine_data = tracks_data[8].bars[curr_bar_index]
+	var ten_data = tracks_data[9].bars[curr_bar_index]
+	return  [one_data, two_data, three_data, four_data, five_data, six_data, seven_data, eight_data, nine_data, ten_data]
 func remove_bar(bar):
 	bar.queue_free()
 	bars.erase(bar)

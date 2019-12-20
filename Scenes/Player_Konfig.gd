@@ -1,13 +1,12 @@
 extends Node2D
 var audio
-var audio_file1 = "res://arena.ogg"
+var audio_file1 = "res://Tracks/Feather.ogg"
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 onready var music_node = $music
 onready var road_node = $Road
-var mapfile1 = "res://Maps/song1.mboy"
-
+var mapfile1 = "res://Maps/feather10.mboy"
 var map
 var tempo
 var bar_length_in_m
@@ -26,7 +25,8 @@ var setup_done
 #	road_node.setup(self)
 
 func _process(delta):
-		if Input.is_action_just_pressed("ui_right") and not setup_done:
+		#if Input.is_action_just_pressed("ui_right") and not setup_done:
+		if not setup_done:
 			audio = load(audio_file1)
 			map = load_map()
 			calc_params()
@@ -38,7 +38,7 @@ func calc_params():
 	bar_length_in_m = 750
 	quarter_time_in_sec = 60/float(tempo)
 	speed = bar_length_in_m/float(4*quarter_time_in_sec)
-	note_scale = bar_length_in_m/float(4*400)
+	note_scale = bar_length_in_m/float(4*400.0)
 	start_pos_in_sec = (float(map.start_pos)/400.0) * quarter_time_in_sec
 
 func load_map():

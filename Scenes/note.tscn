@@ -6,7 +6,9 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 18.5505
 
-[node name="Note" type="Node2D"]
+[node name="Note" type="Node2D" groups=[
+"note",
+]]
 z_index = 2
 script = ExtResource( 1 )
 

@@ -1,11 +1,10 @@
 extends Node2D
 
-var audio = preload("res://arena.ogg")
 onready var player = $AudioStreamPlayer
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var speed
+var speed = 0.0
 var started 
 var pre_start_duration
 var start_pos_in_sec
@@ -17,7 +16,7 @@ func _ready():
 	
 func setup(game):
 	player.stream = game.audio
-	speed = game.speed
+	speed = float(game.speed)
 	started = false
 	pre_start_duration = game.bar_length_in_m
 	start_pos_in_sec = game.start_pos_in_sec
@@ -30,7 +29,7 @@ func start():
 func _process(delta):
 	if setup_done:
 		if not started:
-			pre_start_duration -= speed*delta
+			pre_start_duration -= float(speed)*delta
 			if pre_start_duration <= 0:
 				start()
 				return
