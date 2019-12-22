@@ -14,7 +14,7 @@ texture = ExtResource( 1 )
 
 [node name="notepicker" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.886275, 0.705882, 0, 1 )
-position = Vector2( -45.433, 92.6316 )
+position = Vector2( -2.303, 92.6316 )
 z_index = 1
 line = 1
 is_op = true
@@ -27,7 +27,7 @@ line = 2
 
 [node name="notepicker3" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.886275, 0.705882, 0, 1 )
-position = Vector2( -45.433, 252.632 )
+position = Vector2( -2.303, 252.632 )
 z_index = 1
 line = 3
 is_op = true
@@ -40,49 +40,49 @@ line = 4
 
 [node name="notepicker5" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.823529, 0, 0.827451, 1 )
-position = Vector2( -45.433, 412.632 )
+position = Vector2( -2.303, 412.632 )
 z_index = 1
 line = 5
 is_op = true
 
 [node name="notepicker6" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.823529, 0, 0.827451, 1 )
-position = Vector2( -45.433, 492.632 )
+position = Vector2( -2.303, 492.632 )
 z_index = 1
 line = 6
 is_op = true
 
 [node name="notepicker7" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.823529, 0, 0.827451, 1 )
-position = Vector2( -45.433, 572.632 )
+position = Vector2( -2.303, 572.632 )
 z_index = 1
 line = 7
 is_op = true
 
 [node name="notepicker8" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.823529, 0, 0.827451, 1 )
-position = Vector2( -45.433, 652.632 )
+position = Vector2( -2.303, 652.632 )
 z_index = 1
 line = 8
 is_op = true
 
 [node name="notepicker9" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.823529, 0, 0.827451, 1 )
-position = Vector2( -45.433, 732.632 )
+position = Vector2( -2.303, 732.632 )
 z_index = 1
 line = 9
 is_op = true
 
 [node name="notepicker10" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.823529, 0, 0.827451, 1 )
-position = Vector2( -45.433, 812.632 )
+position = Vector2( -2.303, 812.632 )
 z_index = 1
 line = 10
 is_op = true
 
 [node name="notepicker11" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.0901961, 0.0627451, 0.0901961, 1 )
-position = Vector2( -98.213, 170.9 )
+position = Vector2( -38.453, 170.9 )
 scale = Vector2( 0.82, 1.12 )
 z_index = 1
 line = 22
@@ -90,7 +90,7 @@ is_op = true
 
 [node name="notepicker22" parent="." instance=ExtResource( 2 )]
 modulate = Color( 0.0901961, 0.0627451, 0.0901961, 1 )
-position = Vector2( -98.213, 335.2 )
+position = Vector2( -38.453, 335.2 )
 scale = Vector2( 0.82, 1.12 )
 z_index = 1
 line = 44
